@@ -1,0 +1,7 @@
+Sun, 30 Mar 2014 22:33:08 -0700
+doc/README_FOR_APP	Sat, 29 Mar 2014 18:37:02 -0700
+app/controllers/application_controller.rb	Sun, 30 Mar 2014 21:59:33 -0700
+app/controllers/earthquakes_controller.rb	Sun, 30 Mar 2014 16:58:00 -0700
+app/helpers/application_helper.rb	Sat, 29 Mar 2014 18:37:02 -0700
+app/helpers/earthquakes_helper.rb	Sat, 29 Mar 2014 18:56:01 -0700
+app/models/earthquake.rb	Sun, 30 Mar 2014 12:47:44 -0700

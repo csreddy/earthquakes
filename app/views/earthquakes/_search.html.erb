@@ -1,0 +1,6 @@
+              <%= form_tag "/earthquakes/search", :remote => true, :method => :get, :id => 'search', :authenticity_token => false, :class => 'form-search'  do %>
+                  <%= text_field_tag :start, nil, "data-format" => "yyyy-MM-dd HH:mm:ss", :placeholder => "start", :class => 'input-medium' %>
+				  <%= text_field_tag :end, nil, "data-format" => "yyyy-MM-dd HH:mm:ss", :placeholder => "end", :class => 'input-medium' %>
+				  <%= text_field_tag :mag, nil,  :placeholder => "mag", :class => 'input-small' %>
+                  <%= button_to "Search" , earthquakes_search_path, :class => 'btn btn-primary' %>
+              <% end %>

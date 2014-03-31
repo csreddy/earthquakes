@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: earthquakes
+#
+#  id         :integer          not null, primary key
+#  place      :string(255)
+#  latitude   :float
+#  longitude  :float
+#  magnitude  :float
+#  time       :datetime
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  place: MyString
+  latitude: 1.5
+  longitude: 1.5
+  magnitude: 1.5
+  time: 2014-03-29 18:56:01
+
+two:
+  place: MyString
+  latitude: 1.5
+  longitude: 1.5
+  magnitude: 1.5
+  time: 2014-03-29 18:56:01

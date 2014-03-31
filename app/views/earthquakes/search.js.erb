@@ -1,0 +1,22 @@
+console.log("before search.js.erb")
+
+
+
+var url = "/earthquakes/search.json?start=" + "<%= URI.encode(@starttime) %>" + "&end=" + "<%=  URI.encode(@endtime) %>" + "&mag=" + "<%=  URI.encode(@minmag) %>";
+
+console.log(url);
+$('#map').clear;
+//map = L.mapbox.map('map', 'sudhakarsjce.hlfg5pke');
+
+
+var featureLayer = L.mapbox.featureLayer()
+    .loadURL(url)
+    .addTo(map);
+
+	featureLayer.on('ready', function() {
+	    // featureLayer.getBounds() returns the corners of the furthest-out markers,
+	    // and map.fitBounds() makes sure that the map contains these.
+	    map.fitBounds(featureLayer.getBounds());
+	});
+	
+	console.log("after search.js.erb")
